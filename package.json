@@ -1,0 +1,21 @@
+{
+  "name": "node-simple",
+  "version": "1.0.0",
+  "main": "src/app.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "nodemon --inspect src/app.js --exec babel-node",
+    "devtool": "devtool -r @babel/register src/app.js -w",
+    "build": "babel src -d dist"
+  },
+  "dependencies": {
+    "@babel/core": "^7.0.0-beta.39",
+    "@babel/node": "^7.0.0-beta.39",
+    "@babel/plugin-proposal-object-rest-spread": "^7.0.0-beta.39",
+    "@babel/preset-env": "^7.0.0-beta.39",
+    "@babel/register": "^7.0.0-beta.39",
+    "devtool": "^2.3.1",
+    "eslint": "^4.17.0",
+    "nodemon": "^1.14.12"
+  }
+}
